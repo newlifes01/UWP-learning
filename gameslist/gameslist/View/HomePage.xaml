@@ -13,6 +13,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
         <RelativePanel Grid.Row="0"
@@ -25,7 +26,7 @@
                        FontFamily="微软雅黑"
                        Padding="20,0,0,0"/>
         </RelativePanel>
-        <ListView Name="gamesListView"
+        <GridView Name="gamesListView"
                   Padding="10"
                   Grid.Row="1"
                   CanReorderItems="True"
@@ -33,8 +34,8 @@
                   SelectionMode="None"
                   ItemClick="gamesListView_ItemClick"
                   ItemsSource="{Binding gamesList}"
-                  ItemTemplate="{StaticResource dataTemplategamessForListView}">
-        </ListView>
+                  ItemTemplate="{StaticResource dataTemplategamessForGridView}" Margin="0,0,0,-281">
+        </GridView>
         <ProgressRing Grid.Row="1"
                  Name="Loading"
                  Width="100"

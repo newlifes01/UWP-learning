@@ -17,24 +17,24 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <TextBlock Grid.Row="0" Text="声明" FontWeight="Bold" Margin="0,10,0,0"/>
-        <TextBlock Grid.Row="1" Text="本软件基于聚合数据提供的接口开发。"/>
+        <TextBlock Grid.Row="1" Text="       本软件由作者从互联抓取的数据开发。"/>
         <TextBlock Grid.Row="2" Text="作者" FontWeight="Black" Margin="0,10,0,0"/>
         <RelativePanel Grid.Row="3">
             <Image RelativePanel.AlignLeftWithPanel="True"
                    RelativePanel.AlignVerticalCenterWithPanel="True"
-                   Source="/Assets/Image/user.jpeg"
+                   Source="/Assets/Image/user.gif"
                    Height="80"
-                   x:Name="ZX"/>
-            <TextBlock RelativePanel.RightOf="ZX"
+                   x:Name="xboxwin"/>
+            <TextBlock RelativePanel.RightOf="xboxwin"
                        RelativePanel.AlignTopWithPanel="True"
                        RelativePanel.Above="hy"
                        Padding="10,0,0,0"
-                       Text="眾尋"/>
-            <HyperlinkButton NavigateUri="http://www.cnblogs.com/ZXdeveloper/"
+                       Text="万机宸翰"/>
+            <HyperlinkButton NavigateUri="http://www.xboxwin.com/blog/"
                              Name="hy"
-                             RelativePanel.RightOf="ZX"
+                             RelativePanel.RightOf="xboxwin"
                              RelativePanel.AlignVerticalCenterWithPanel="True"
-                             Content="http://www.cnblogs.com/ZXdeveloper/"
+                             Content="http://www.xboxwin.com/blog/"
                              Margin="10,0,0,0"/>
         </RelativePanel>
     </Grid>

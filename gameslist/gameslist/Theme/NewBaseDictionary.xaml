@@ -42,13 +42,34 @@
                     <ColumnDefinition Width="Auto"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <TextBlock Grid.Column="0" Grid.Row="0" Text="姓名：" Style="{StaticResource textblockMenuContent}"/>
+                <TextBlock Grid.Column="0" Grid.Row="0" Text="游戏名称：" Style="{StaticResource textblockMenuContent}"/>
                 <TextBlock Grid.Column="1" Grid.Row="0" Text="{x:Bind title}" Style="{StaticResource textblockMenuContent}"/>
-                <TextBlock Grid.Column="0" Grid.Row="1" Text="手机：" Style="{StaticResource textblockMenuContent}"/>
+                <TextBlock Grid.Column="0" Grid.Row="1" Text="游戏I D：" Style="{StaticResource textblockMenuContent}"/>
                 <TextBlock Grid.Column="1" Grid.Row="1" Text="{x:Bind pid}" Style="{StaticResource textblockMenuContent}"/>
             </Grid>
         </Grid>
     </DataTemplate>
+    <DataTemplate x:Key="dataTemplategamessForGridView" x:DataType="data:games">
+        <Grid Padding="5">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="285"/>
+                <RowDefinition Height="60"/>
+            </Grid.RowDefinitions>
+            <StackPanel Grid.Row="0" Padding="5" VerticalAlignment="Center">
+                <Rectangle Width="208" Height="285">
+                    <Rectangle.Fill>
+                        <ImageBrush ImageSource="{x:Bind url_img}"/>
+                    </Rectangle.Fill>
+                </Rectangle>
+            </StackPanel>
+            <Grid Grid.Row="1" Padding="5">         
+                <TextBlock  Text="{x:Bind title}" Style="{StaticResource textblockMenuContent}" FontSize="18"/>
+            </Grid>
+        </Grid>
+    </DataTemplate>    
+    
+    
+    
     <!--  
     <DataTemplate x:Key="dataTemplateArgsForListView" x:DataType="data:Args">
         <Grid Padding="5">

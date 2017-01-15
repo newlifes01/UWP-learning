@@ -27,7 +27,7 @@ namespace gameslist.View
             this.InitializeComponent();
         }
         /// <summary>
-        /// 点击列表内容，查看律师信息
+        /// 点击列表内容，查看游戏信息
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>

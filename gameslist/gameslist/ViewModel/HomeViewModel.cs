@@ -42,7 +42,7 @@ namespace gameslist.ViewModel
 
         private ObservableCollection<games> _gamesList = new ObservableCollection<games>();
         /// <summary>
-        /// 律师列表
+        /// 游戏列表
         /// </summary>
         public ObservableCollection<games> gamesList
         {

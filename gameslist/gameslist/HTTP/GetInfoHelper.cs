@@ -32,7 +32,7 @@ namespace gameslist.HTTP
                 }
                 else
                 {
-                    await (new MessageDialog("无法连接")).ShowAsync();
+                    await (new MessageDialog("错误代码：  404"+"\r\n"+"错误信息："+"无法连接网站")).ShowAsync();
                     return;
                 }
             }

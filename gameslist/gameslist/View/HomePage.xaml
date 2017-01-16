@@ -34,7 +34,7 @@
                   SelectionMode="None"
                   ItemClick="gamesListView_ItemClick"
                   ItemsSource="{Binding gamesList}"
-                  ItemTemplate="{StaticResource dataTemplategamessForGridView}" Margin="0,0,0,-281">
+                  ItemTemplate="{StaticResource dataTemplategamessForGridView}" Margin="0,0,0,20">
         </GridView>
         <ProgressRing Grid.Row="1"
                  Name="Loading"
@@ -42,5 +42,10 @@
                  Height="100"
                  IsActive="True"
                  Visibility="{Binding ProgressRingVisibility}"/>
+        <RelativePanel Grid.Row="2"
+                       Background="{ThemeResource SystemControlHighlightAltListAccentLowBrush}">
+            <TextBlock Text="留空" />
+
+        </RelativePanel>
     </Grid>
 </Page>

@@ -33,7 +33,7 @@ namespace gameslist.View
         /// <param name="e"></param>
         private void gamesListView_ItemClick(object sender, ItemClickEventArgs e)
         {
-            this.Frame.Navigate(typeof(AboutPage), new object[] { e.ClickedItem });
+            this.Frame.Navigate(typeof(GameInfo), new object[] { e.ClickedItem });
         }
 
     }

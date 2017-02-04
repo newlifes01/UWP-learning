@@ -37,7 +37,7 @@ namespace gameslist.View
             }
             set
             {
-                gameInfo = value;
+                gameInfo = null;
             }
         }
         protected override void OnNavigatedFrom(NavigationEventArgs e)

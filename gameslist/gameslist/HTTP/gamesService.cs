@@ -16,11 +16,11 @@ namespace gameslist.HTTP
         GetInfoHelper<games> getgamesInfo = new GetInfoHelper<games>();        
         GetInfoHelper<string> getStringInfo = new GetInfoHelper<string>();        
         /// <summary>
-        /// 随机查询律师
+        /// 查询游戏列表
         /// </summary>
         static string _url_SearchgamesByRand = "http://localhost:8080/20161228/list.php?format={0}&page={1}&pagesize={2}";
         /// <summary>
-        /// 随机查询律师
+        /// 查询游戏列表
         /// </summary>
         /// <param name="format"></param>
         /// <param name="page"></param>

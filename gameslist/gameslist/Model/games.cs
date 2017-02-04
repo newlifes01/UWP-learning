@@ -19,5 +19,7 @@ namespace gameslist.Model
 
         public string pid { get; set; }
 
+        public string description { get; set; }
+
     }
 }

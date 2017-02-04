@@ -26,6 +26,7 @@ namespace gameslist.View
         public GameInfo()
         {
             this.InitializeComponent();
+            gamegllistFrame.Navigate(typeof(HomePage));
         }
         private games gameInfo = new games();
 

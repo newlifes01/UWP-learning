@@ -32,7 +32,7 @@
                        FontFamily="微软雅黑"
                        Padding="20,0,0,0"/>
         </RelativePanel>
-        <Grid Grid.Row="1" DataContext="{x:Bind GamesInfo}">
+        <Grid Grid.Row="1" DataContext="{x:Bind GamesInfo}" Padding="0,20,0,20"  Grid.RowSpan="2">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto" />
                 <ColumnDefinition Width="*" />
@@ -43,8 +43,9 @@
             </Grid.RowDefinitions>
             <Image Grid.Column="0" Grid.Row="0"             
                    Width="208"
-                   Height="285"
-                   Source="{x:Bind GamesInfo.url_img}"/>
+                   Height="285"                   
+                   Source="{x:Bind GamesInfo.url_img}"
+                   />
                 
             
             <Grid Grid.Column="1" Grid.Row="0">
@@ -65,9 +66,21 @@
                            Text="{x:Bind GamesInfo.title}"
                            Visibility="{x:Bind GamesInfo.title,Converter={StaticResource isNullOrEmptyConverVisibility}}"
                            Style="{StaticResource SubtitleTextBlockStyle}"/>
+                <TextBlock Grid.Row="1" Grid.Column="0"
+                           Text="游戏摘要："
+                           Visibility="{x:Bind GamesInfo.description,Converter={StaticResource isNullOrEmptyConverVisibility}}"
+                           Style="{StaticResource TitleTextBlockStyle}"/>
+                <TextBlock Grid.Row="1" Grid.Column="1"
+                           Text="{x:Bind GamesInfo.description}"
+                           Visibility="{x:Bind GamesInfo.description,Converter={StaticResource isNullOrEmptyConverVisibility}}"
+                           Style="{StaticResource SubtitleTextBlockStyle}"/>
 
             </Grid>
+          <Grid Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2">
+                <Frame Name="gamegllistFrame"/>
+            </Grid>  
         </Grid>
+        
 
     </Grid>
 </Page>

@@ -41,13 +41,12 @@
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
-            <StackPanel Grid.Column="0" Grid.Row="0">
-                <Rectangle Width="208" Height="285">
-                    <Rectangle.Fill>
-                        <ImageBrush ImageSource="{x:Bind GamesInfo.url_img}"/>
-                    </Rectangle.Fill>
-                </Rectangle>
-            </StackPanel>
+            <Image Grid.Column="0" Grid.Row="0"             
+                   Width="208"
+                   Height="285"
+                   Source="{x:Bind GamesInfo.url_img}"/>
+                
+            
             <Grid Grid.Column="1" Grid.Row="0">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto" />

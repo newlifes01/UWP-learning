@@ -37,12 +37,12 @@ namespace gameslist.View
             }
             set
             {
-                gameInfo = null;
+                gameInfo = value;
             }
         }
-        protected override void OnNavigatedFrom(NavigationEventArgs e)
+        protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            base.OnNavigatedFrom(e);
+            base.OnNavigatedTo(e);
             object[] parameters = e.Parameter as object[];
             if(parameters!=null)
             {

@@ -95,7 +95,7 @@ namespace gameslist.Model
                 HasMoreItems = false;
             }
 
-            if (list != null && list.Any()&& _current_page<5)
+            if (list != null && list.Any()&& _current_page<2)
             {
                 actualCount = list.Count;
                 _current_page++;

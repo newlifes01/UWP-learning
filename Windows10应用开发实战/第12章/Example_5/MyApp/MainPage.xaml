@@ -1,0 +1,22 @@
+﻿<Page
+    x:Class="MyApp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MyApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <StackPanel>
+        <ComboBox Header="你希望多少天提示一次？" Name="cmb" SelectionChanged="OnCmbSelectionChanged">
+            <ComboBoxItem>5天</ComboBoxItem>
+            <ComboBoxItem>8天</ComboBoxItem>
+            <ComboBoxItem>15天</ComboBoxItem>
+            <ComboBoxItem>1个月</ComboBoxItem>
+        </ComboBox>
+        <TextBox Name="txt1" Header="请设置一个别名：" LostFocus="OnText1Lostfocus"/>
+        <TextBox Name="txt2" Header="请指定一个关键词：" LostFocus="OnText2Lostfocus"/>
+        <ToggleSwitch Name="tgswitch" Header="是否开启自动获取？" OnContent="是" OffContent="否" Toggled="OnToggled"/>
+    </StackPanel>
+</Page>

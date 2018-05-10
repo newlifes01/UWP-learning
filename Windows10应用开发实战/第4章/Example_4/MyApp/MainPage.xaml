@@ -1,0 +1,16 @@
+﻿<Page
+    x:Class="MyApp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MyApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Rectangle Fill="LightGreen" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Height="150" Canvas.ZIndex="1"/>
+        <Rectangle Fill="#FF5D3DA2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="85,70,0,0" Width="150" Height="150" Canvas.ZIndex="0"/> 
+        <Rectangle Fill="#FFD1FF00" Height="150" Width="150" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="180,160,0,0"/>
+    </Grid>
+</Page>

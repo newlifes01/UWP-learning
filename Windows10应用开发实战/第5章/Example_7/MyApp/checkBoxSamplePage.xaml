@@ -1,0 +1,23 @@
+﻿<local:CommonPage
+    x:Class="MyApp.checkBoxSamplePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MyApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <StackPanel Margin="15">
+        <TextBlock Text="请选择你喜欢的水果：" FontSize="24"/>
+        <StackPanel Orientation="Vertical" x:Name="checks">
+            <CheckBox Content="梨子" Checked="OnChecked" Unchecked="OnUnchecked"/>
+            <CheckBox Content="桃子" Checked="OnChecked" Unchecked="OnUnchecked"/>
+            <CheckBox Content="苹果" Checked="OnChecked" Unchecked="OnUnchecked"/>
+            <CheckBox Content="葡萄" Checked="OnChecked" Unchecked="OnUnchecked"/>
+        </StackPanel>
+        <Border Margin="0,13,0,0" Padding="6" Background="Green">
+            <TextBlock x:Name="tbRes" FontSize="24" Foreground="White" TextWrapping="Wrap"/>
+        </Border>
+    </StackPanel>
+</local:CommonPage>

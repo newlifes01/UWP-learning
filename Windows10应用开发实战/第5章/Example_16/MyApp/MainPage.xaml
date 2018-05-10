@@ -1,0 +1,30 @@
+﻿<Page
+    x:Class="MyApp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MyApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <CheckBox Content="加粗" Checked="OnBoldChecked" Unchecked="OnBoldUnchecked"/>
+                <CheckBox Margin="15,0,0,0" Content="下划线" Checked="OnUnderlineChecked" Unchecked="OnUnderlineUnchecked"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Button Content="绿色" Click="OnGreenClick"/>
+                <Button Margin="13,0,0,0" Content="蓝色" Click="OnBlueClick"/>
+                <Button Content="红色" Margin="13,0,0,0" Click="OnRedClick"/>
+            </StackPanel>
+        </StackPanel>
+        
+        <RichEditBox x:Name="richedt" Grid.Row="1" Margin="5" VerticalAlignment="Stretch" TextWrapping="Wrap"/>
+    </Grid>
+</Page>

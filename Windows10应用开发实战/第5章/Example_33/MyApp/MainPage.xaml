@@ -1,0 +1,23 @@
+﻿<Page
+    x:Class="MyApp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MyApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <WebView x:Name="webView" Margin="2" Loaded="OnLoaded"/>
+        <StackPanel Margin="3" Grid.Row="1" HorizontalAlignment="Center" Orientation="Horizontal">
+            <Button Content="字体：小" Click="OnClick" Tag="1"/>
+            <Button Content="字体：中" Click="OnClick" Tag="2"/>
+            <Button Content="字体：大" Click="OnClick" Tag="3"/>
+        </StackPanel>
+    </Grid>
+</Page>

@@ -1,0 +1,18 @@
+﻿<local:CommonPage
+    x:Class="MyApp.radioButtonSamplePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MyApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <StackPanel Margin="15">
+        <RadioButton Content="item 1" GroupName="ga"/>
+        <RadioButton Content="item 2" GroupName="ga"/>
+        <RadioButton Content="item 3" GroupName="gb"/>
+        <RadioButton Content="item 4" GroupName="gb"/>
+        <RadioButton Content="item 5" GroupName="gb"/>
+    </StackPanel>
+</local:CommonPage>

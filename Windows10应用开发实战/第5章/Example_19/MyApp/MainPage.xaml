@@ -1,0 +1,19 @@
+﻿<Page
+    x:Class="MyApp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MyApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <StackPanel Margin="15">
+        <TextBlock Margin="2,5,0,20" FontSize="36" Text="明确进度："/>
+        <ProgressBar x:Name="progressBd" Maximum="100" Minimum="0" Height="25" Foreground="Yellow"/>
+        <Button Content="开始任务" Click="OnStart" Margin="0,15,0,0"/>
+
+        <TextBlock Margin="2,95,0,20" FontSize="36" Text="未明确进度："/>
+        <ProgressBar IsIndeterminate="True" />
+    </StackPanel>
+</Page>

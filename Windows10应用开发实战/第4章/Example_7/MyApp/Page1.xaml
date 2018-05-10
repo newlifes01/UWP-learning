@@ -1,0 +1,31 @@
+﻿<local:CommonPage
+    x:Class="MyApp.Page1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MyApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <RelativePanel Background="Gray">
+            <Rectangle Name="rect1" Fill="LightGreen" Width="200" Height="200" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True"/>
+            <!-- 上方 -->
+            <Rectangle Fill="White" RelativePanel.Above="rect1" RelativePanel.AlignLeftWith="rect1" Width="50" Height="50"/>
+            <Rectangle Width="50" Height="50" Fill="White" RelativePanel.Above="rect1" RelativePanel.AlignHorizontalCenterWith="rect1"/>
+            <Rectangle Width="50" Height="50" Fill="White" RelativePanel.Above="rect1" RelativePanel.AlignRightWith="rect1"/>
+            <!-- 左方 -->
+            <Rectangle Width="50" Height="50" Fill="White" RelativePanel.LeftOf="rect1" RelativePanel.AlignTopWith="rect1"/>
+            <Rectangle Width="50" Height="50" Fill="White" RelativePanel.LeftOf="rect1" RelativePanel.AlignVerticalCenterWith="rect1"/>
+            <Rectangle Width="50" Height="50" Fill="White" RelativePanel.LeftOf="rect1" RelativePanel.AlignBottomWith="rect1"/>
+            <!-- 右方 -->
+            <Rectangle Fill="White" Width="50" Height="50" RelativePanel.RightOf="rect1" RelativePanel.AlignTopWith="rect1"/>
+            <Rectangle Fill="White" Width="50" Height="50" RelativePanel.RightOf="rect1" RelativePanel.AlignVerticalCenterWith="rect1"/>
+            <Rectangle Fill="White" Width="50" Height="50" RelativePanel.RightOf="rect1" RelativePanel.AlignBottomWith="rect1"/>
+            <!-- 下方 -->
+            <Rectangle Width="50" Height="50" Fill="White" RelativePanel.Below="rect1" RelativePanel.AlignLeftWith="rect1"/>
+            <Rectangle Width="50" Height="50" Fill="White" RelativePanel.Below="rect1" RelativePanel.AlignHorizontalCenterWith="rect1"/>
+            <Rectangle Width="50" Height="50" Fill="White" RelativePanel.Below="rect1" RelativePanel.AlignRightWith="rect1"/>
+        </RelativePanel>
+    </Grid>
+</local:CommonPage>

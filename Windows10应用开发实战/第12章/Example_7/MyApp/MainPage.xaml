@@ -1,0 +1,49 @@
+﻿<Page
+    x:Class="MyApp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MyApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Pivot Margin="25">
+            <PivotItem Header="打开文件">
+                <StackPanel>
+                    <Button Content="选择一个文件" Click="OnPickFile"/>
+                    <TextBlock Name="tbFileinfo" Margin="3,8,0,0" TextWrapping="Wrap"/>
+                </StackPanel>
+            </PivotItem>
+            <PivotItem Header="保存文件">
+                <StackPanel>
+                    <TextBlock TextWrapping="Wrap" FontSize="20">随机生成200个字节，然后写入待保存的文件中。</TextBlock>
+                    <Button Content="保存文件" Margin="0,15,0,0" Click="OnFileSave"/>
+                </StackPanel>
+            </PivotItem>
+            <PivotItem Header="选择目录">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Button Content="选择一个目录" Click="OnOpenFolder"/>
+                    <ListView Name="lvFiles" Grid.Row="1" Header="文件列表">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="auto"/>
+                                        <ColumnDefinition />
+                                    </Grid.ColumnDefinitions>
+                                    <Image Grid.Column="0" Width="40" Height="40" Source="{Binding Path=Image}"/>
+                                    <TextBlock Margin="12,0,0,0" FontSize="16" Grid.Column="1" Text="{Binding Path=Name}"/>
+                                </Grid>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </Grid>
+            </PivotItem>
+        </Pivot>
+    </Grid>
+</Page>

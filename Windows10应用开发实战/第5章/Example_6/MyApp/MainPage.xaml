@@ -1,0 +1,16 @@
+﻿<Page
+    x:Class="MyApp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MyApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <StackPanel>
+        <HyperlinkButton Content="微软公司主页" NavigateUri="http://www.microsoft.com/zh-cn"/>
+        <HyperlinkButton Content="MSDN主页" NavigateUri="http://msdn.microsoft.com/zh-cn"/>
+        <HyperlinkButton Content="打开蓝牙设置页" NavigateUri="ms-settings-bluetooth:"/>
+    </StackPanel>
+</Page>

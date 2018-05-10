@@ -1,0 +1,32 @@
+﻿<Page
+    x:Class="MyApp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MyApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <RichTextBlock FontSize="20">
+            <Paragraph>
+                <Bold FontSize="28">古琴简介</Bold>
+            </Paragraph>
+            <Paragraph TextIndent="38">
+                古琴，又称
+                <Underline Foreground="#FF99EA0C">琴、瑶琴、玉琴、丝桐和七弦琴</Underline>，是一种汉族传统拨弦乐器，有三千年以上历史，属于八音中的丝。古琴音域宽广，音色深沉，余音悠远。自古“琴”为其特指.位列中国传统文化四艺“琴棋书画”之首，被文人视为高雅的代表，亦为文人吟唱时的伴奏乐器，自古以来一直是许多文人必备的知识和必修的科目。
+            </Paragraph>
+            <Paragraph TextAlignment="Center">
+                <InlineUIContainer>
+                    <Image Source="Assets/1.jpg" Height="200"/>
+                </InlineUIContainer>
+            </Paragraph>
+            <Paragraph TextIndent="38">
+                伯牙、钟子期以“
+                <Italic Foreground="SkyBlue">高山流水</Italic>”而成知音的故事流传至今；琴台被视为友谊的象征。大量诗词文赋中有琴的身影。现存琴曲
+                <Bold Foreground="LightGreen">3360</Bold>多首，琴谱130多部，琴歌300首。主要流传范围是汉文化圈国家和地区，
+            </Paragraph>
+        </RichTextBlock>
+    </Grid>
+</Page>

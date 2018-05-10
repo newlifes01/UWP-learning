@@ -1,0 +1,43 @@
+﻿<Page
+    x:Class="MyApp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MyApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="员工信息" Margin="0,14,0,10" FontSize="40" HorizontalAlignment="Center"/>
+        <StackPanel Grid.Row="1" Margin="6">
+            <TextBox x:Name="txtName" Header="姓名："/>
+            <TextBox x:Name="txtAge" Header="年龄：">
+                <TextBox.InputScope>
+                    <InputScope>
+                        <InputScope.Names>
+                            <InputScopeName NameValue="Number"/>
+                        </InputScope.Names>
+                    </InputScope>
+                </TextBox.InputScope>
+            </TextBox>
+            <TextBox x:Name="txtSeniority" Header="工龄：">
+                <TextBox.InputScope>
+                    <InputScope>
+                        <InputScope.Names>
+                            <InputScopeName NameValue="Number"/>
+                        </InputScope.Names>
+                    </InputScope>
+                </TextBox.InputScope>
+            </TextBox>
+            <TextBox x:Name="txtPosition" Header="岗位："/>
+            <TextBox x:Name="txtIntroduction" Header="简介：" Height="100" TextWrapping="Wrap"/>
+            
+            <Button Content="提交" Click="OnSubmit"/>
+        </StackPanel>
+    </Grid>
+</Page>
